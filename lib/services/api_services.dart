@@ -11,6 +11,7 @@ class ApiService {
 
   Future<Map<String, dynamic>?> getKMeans(int k) async {
     final token = await _auth.getToken();
+    print(token);
     final res = await http.get(
       Uri.parse("$baseUrl/kmeans?k=$k"),
       headers: {"Authorization": "Bearer $token"},

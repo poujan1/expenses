@@ -104,6 +104,7 @@ class AuthProvider with ChangeNotifier {
         return false;
       }
     } catch (e) {
+      print(e);
       _setError('Network error. Please check your connection.');
       _setLoading(false);
       return false;
@@ -141,6 +142,7 @@ class AuthProvider with ChangeNotifier {
         return false;
       }
     } catch (e) {
+      print(e);
       _setError('Network error. Please check your connection.');
       _setLoading(false);
       return false;

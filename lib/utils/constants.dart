@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppConstants {
-  static const String baseUrl = 'https://api.nirajandahal.com.np/api';
+  static const String baseUrl =
+      'https://income-expense-personal-dvpl.onrender.com/api';
 
   static const List<String> transactionCategories = [
     'Food & Dining',
